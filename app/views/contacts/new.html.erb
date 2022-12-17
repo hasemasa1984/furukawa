@@ -1,0 +1,11 @@
+<div class="contents row">
+  <div class="container">
+    <h3>応募フォーム</h3>
+    <%= form_with(model: @contact, local: true) do |form| %>
+      <%= form.text_field :name, placeholder: "名前" %>
+      <%= form.text_field :email, placeholder: "メールアドレス" %>
+      
+      <%= form.submit "SEND" %>
+    <% end %>
+  </div>
+</div>
